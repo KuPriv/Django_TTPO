@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок</title>
+  </head>
+  <body>
+  <h1> Город, в котором выступали </h1>
+    <form action = "/cgi-bin/AddCountry.py">
+        Город <input type = "text" name = "place">
+        Количество раз <input type = "text" name = "col">
+        <input type = "submit">
+    </form>
+  <h1> Певец </h1>
+    <form action = "/cgi-bin/AddSinger.py">
+        Имя <input type = "text" name =
+      "name1" >
+          Возраст <input type = "text" name =
+      "age" >
+      Страна(родился) <input type = "text" name =
+      "country" >
+      Город(в котором выступал) <input type = "text" name =
+      "place" >
+       Музычка <input type = "text" name =
+      "music" >
+      <input type = "submit" >
+    </form>
+    <h1> Песня </h1>
+    <form action = "/cgi-bin/AddMusic.py">
+        Музыка <input type = "text" name = "music">
+        Когда исполнили <input type = "text" name = "dat">
+        <input type = "submit">
+    </form>
+    <h1> Вывод базы </h1>
+    <form action = "/cgi-bin/Baza.py">
+        <input type = "submit" value = "Вывести">
+    </form>
+
+    <h1> Импорт в xml </h1>
+    <form action = "/cgi-bin/XmlImport.py">
+        <input type = "submit" value = "Импортировать города">
+    </form>
+
+    <h1> Экспорт из xml </h1>
+    <form action = "/cgi-bin/XmlExport.py">
+        <input type = "submit" value = "Экспортировать города">
+    </form>
+  <h1> Начальная база</h1>
+    <form action = "/cgi-bin/bd.py">
+        <input type = "submit" value = "Начальная база">
+    </form>
+  </body>
+</html>

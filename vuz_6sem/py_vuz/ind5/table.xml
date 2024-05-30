@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<table>
+	<record>
+		<id>1</id>
+		<place>Moscow</place>
+		<col>2</col>
+	</record>
+	<record>
+		<id>2</id>
+		<place>Sochi</place>
+		<col>1</col>
+	</record>
+	<record>
+		<id>3</id>
+		<place>Washington</place>
+		<col>2</col>
+	</record>
+	<record>
+		<id>4</id>
+		<place>Kazan</place>
+		<col>2</col>
+	</record>
+	<record>
+		<id>5</id>
+		<place>qwe</place>
+		<col>3</col>
+	</record>
+</table>
