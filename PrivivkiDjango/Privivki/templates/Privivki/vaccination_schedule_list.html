@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Журнал прививок</title>
+    <style>
+        .be_good_boy {
+        display:inline-block;
+        }
+
+        .i_want_to_be_small {
+        font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Журнал</h1>
+<ul>
+    {% for i in queryset %}
+        <div class="be_good_boy">
+            <a href="/Privivki/vaccination_schedule/{{i.id}}/"> <h2> {{ i.child }} | {{ i.vaccination }} | {{ i.scheduled_date }} </h2> </a>
+        </div>
+        <div class="be_good_boy" class="i_want_to_be_small">
+            <a href="/Privivki/vaccination_schedule/{{i.id}}/delete"> <img src="{% static 'img/krest.png' %}" alt="photo" width=25 height=25 /> </a>
+        </div>
+    </br>
+    {% endfor %}
+    <div>
+        <form action="/Privivki/vaccination_schedule/create" target="_blank">
+            <button>Создать новую запись</button>
+        </form>
+    </div>
+</ul>
+</body>
+</html>

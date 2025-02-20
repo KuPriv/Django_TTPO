@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="text">
+        <p>Ребенок: {{instance.child}}</p>
+        <p>Прививка: {{instance.vaccination}}</p>
+        <p>Дата: {{instance.scheduled_date}}</p>
+    </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <a class="relo" href="/Privivki/vaccination_schedule/{{instance.id}}/update">
+            Обновить
+        </a>
+    <br>
+    </form>
+<form action = "../../vaccination_schedule">
+                    <input type = "submit" value = "ОК" class="but">
+                </form>
+</body>
+</html>

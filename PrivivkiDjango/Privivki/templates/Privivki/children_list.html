@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дети</title>
+</head>
+<body>
+<h1>Список детей</h1>
+<ul>
+    {% for i in queryset %}
+        <div>
+            <a href="/Privivki/children/{{i.id}}/" class="ite"> <h2> {{ i.fio }} </h2> </a>
+        </div>
+    {% endfor %}
+</ul>
+</body>
+</html>
